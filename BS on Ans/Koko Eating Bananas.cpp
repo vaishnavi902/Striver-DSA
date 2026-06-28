@@ -17,7 +17,7 @@ class solution{
     int kokoBananas(vector<int> &piles, int h){
         int maxpile = *max_element(piles.begin() , piles.end());
         for(int k = 1 ; k <= maxpile; k++){
-            int hours =0;
+            long long hours =0;
             for(int i = 0 ;i< piles.size(); i++){
                 hours += (piles[i] + k-1)/k;
             }
